@@ -1,0 +1,30 @@
+{
+  "name": "steps",
+  "version": "0.0.1",
+  "description": "easy and simple thenables",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhigginbotham/steps"
+  },
+  "keywords": [
+    "promise",
+    "then",
+    "done"
+  ],
+  "author": "dhigginbotham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dhigginbotham/steps/issues"
+  },
+  "homepage": "https://github.com/dhigginbotham/steps",
+  "devDependencies": {
+    "expect.js": "~0.3.1"
+  }
+}
