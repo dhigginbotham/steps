@@ -74,8 +74,16 @@ describe('steps.js test suite', function() {
       key: 'eigthRequest',
       func: func,
       callback: callback
-    }).done(function(resp) {
+    });
+    step.done(function(resp) {
       expect(Object.keys(resp).length).to.eql(1);
+    });
+    step.then({
+      key: 'ninethRequest',
+      func: func,
+      callback: callback
+    }).done(function(resp) {
+      expect(Object.keys(resp).length).to.eql(2);
       done();
     })
   });
