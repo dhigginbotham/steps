@@ -69,4 +69,15 @@ describe('steps.js test suite', function() {
     });
   });
 
+  it('should allow objects instead of arrays', function(done) {
+    var step = steps({
+      key: 'eigthRequest',
+      func: func,
+      callback: callback
+    }).done(function(resp) {
+      expect(Object.keys(resp).length).to.eql(1);
+      done();
+    })
+  });
+
 });
