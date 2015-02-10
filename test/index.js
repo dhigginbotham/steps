@@ -1,5 +1,5 @@
 var expect = require('expect.js'),
-    steps = require('../lib/steps');
+    steps = require('../lib');
 
 describe('steps.js test suite', function() {
 
